@@ -1,13 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, distinctio voluptatum sed cum quisquam molestias facere ducimus id, et dolore iure. Nostrum, aperiam. Ea quisquam consectetur incidunt numquam dolorem enim!    </p>
-    
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#registration">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="books" class="section">
+        <div>
+            <h1>Books</h1>
+            <table class="main box">
+                <tbody>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                    <tr>
+                        <td class="table2"> 1 </td>
+                        <td class="table1 table2"><a href="#">Book Title 1</a>
+                            <table class="top">
+                                <tbody>
+                                    <tr>
+                                        <td>Publication Date:2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count:250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN:123-4567890123</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="table2"> Author Name 1</td>
+                        <td class="table2"> Genre 1 </td>
+                        <td class="table2"> Available </td>
+                    </tr>
+                    <tr>
+                        <td class="table2"> 2 </td>
+                        <td class="table1 table2"><a href="#">Book Title 2</a>
+                            <table class="top">
+                                <tbody>
+                                    <tr>
+                                        <td>Publication Date:2005</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count:300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN:123-4567890456</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="table2"> Author Name 2</td>
+                        <td class="table2"> Genre 2 </td>
+                        <td class="table2">Not Available </td>
+                    </tr>
+                    <tr>
+                        <td class="table2"> 3 </td>
+                        <td class="table1 table2"><a href="#">Book Title 3</a>
+                            <table class="top">
+                                <tbody>
+                                    <tr>
+                                        <td>Publication Date:2010</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count:350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN:123-4567890789</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="table2"> Author Name 3</td>
+                        <td class="table2"> Genre 3 </td>
+                        <td class="table2"> Available </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="registration" class="section">
+        <div class="container">
+            <h2>Register</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="firstname">First Name:</label><br>
+                    <input type="text" id="firstname" placeholder="First name" required="">
+                </div><br>
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label><br>
+                    <input type="text" id="lastname" placeholder="Last name" required="">
+                </div><br>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob"  placeholder="dd-mm--yy" required="">
+                </div><br>
+                <div class="form-group">
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" min="5" max="100"  placeholder="Enter your age" required="">
+                </div><br>
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Email Address" required="">
+                </div><br>
+                <div class="form-group">
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Enter a valid Password" required="">
+                </div><br>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required="">
+                </div><br>
+                <div class="form-group">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
+
 </html>
